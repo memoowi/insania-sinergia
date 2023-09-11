@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.scss">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontak</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">Masuk/Daftar</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
+    <header class="head d-flex justify-content-center">
+      <div class="row container">
+        <div class="col-md-6 d-flex justify-content-center kiri">
+          <div class="content">
+            <h1>
+              Selamat Datang di <br> Insania Sinergia
+            </h1>
+            <p>
+              Penyedia Jasa Konsultasi dan rekomendasi terbaik terkait rencana bisnis maupun permasalahan bisnis yang tengah dihadapi.
+            </p>
+            <div class="button">
+              <a href="#" class="btn btn-secondary">
+                Segera Atur Jadwal Konsultasi Anda
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 kanan">
+          <img src="images/1.svg" alt="Meeting images" class="img-fluid">
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- About Us -->
+    <section class="aboutUs d-flex justify-content-center container mb-5">
+      <div class="row">
+        <div class="col-md-8 kiri pt-5">
+          <div class="gambar-1 pt-5">
+            <img src="images/2-1.png" width="480px" height="363px" alt="Working Table" class="position-relative img-fluid pt-5">
+          </div>
+          <div class="gambar-2 position-relative text-end">
+            <img src="images/2-2.png" width="360px" height="262px" alt="Field" class="position-relative img-fluid img-2">
+          </div>
+        </div>
+        <div class="col-md-4 kanan d-flex align-items-center">
+          <div class="text-end">
+            <h2>Tentang Kami</h2>
+            <p>
+              Jasa kami mencakup bantuan nasihat bisnis, bimbingan dan operasional berbagai fungsi manajemen bisnis, konsultasi manajemen olah agronomist dan agricultural economis pada bidang pertanian...
+            </p>
+            <div>
+              <a href="#" class="btn btn-primary">
+                Tampilkan Lebih Banyak
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Us -->
+
+    <!-- Why Us? -->
+    <section class="whyUs">
+      <div class="container">
+        <div class="text-center m-5">
+          <h2>
+            Mengapa Harus Kami?
+          </h2>
+        </div>
+        <div class="d-grid">
+          <div class="text-center">
+            <div>
+              <img src="images/v1.svg" alt="">
+            </div>
+            <h3>Pandangan Objektif</h3>
+            <p>
+              Konsultan bisnis dapat memberi pandangan pihak ketiga tentang bisnis yang dijalankan. Dengan melakukan evaluasi operasi yang jujur, akan diberikan pandangan objektif yang dapat membantu dengan perencanaan di masa depan.
+            </p>
+          </div>
+          <div class="text-center">
+            <div>
+              <img src="images/v2.svg" alt="">
+            </div>
+            <h3>Branding Layanan</h3>
+            <p>
+              Kami memberikan banyak informasi tentang bagaimana memasarkan produk dan bagaimana menggunakan branding untuk mendapatkan pemasaran produk. Branding layanan dan produk adalah bagian penting dalam mempromosikan bisnis.
+            </p>
+          </div>
+          <div class="text-center">
+            <div>
+              <img src="images/v3.svg" alt="">
+            </div>
+            <h3>Menghemat Uang dan Waktu</h3>
+            <p>
+              Mengandalkan teknik trial and error untuk bergerak maju. Namun ini bisa menjadi cara belajar yang mahal, terutama jika telah melakukan kesalahan yang mengakibatkan kerugian dana besar. kami dapat membantu merencanakan, membuat keputusan, dan mengembangkan bisnis secara strategis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Why Us? -->
+
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <div class="title">
+          <h2>Pelayanan Kami</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <!-- E-Faktur Jasa -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s1.svg" class="card-img-top" alt="E-Faktur Jasa">
+              <div class="card-body">
+                <h5 class="card-title text-center">E-Faktur Jasa</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Pendaftaran PT -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s2.svg" class="card-img-top" alt="Pendaftaran PT">
+              <div class="card-body">
+                <h5 class="card-title text-center">Pendaftaran PT</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Jasa Pembukuan -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s3.svg" class="card-img-top" alt="Jasa Pembukuan">
+              <div class="card-body">
+                <h5 class="card-title text-center">Jasa Pembukuan</h5>
+              </div>
+            </div>
+          </div>
+          <!-- E-Faktur Jasa -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s4.svg" class="card-img-top" alt="E-Faktur Jasa">
+              <div class="card-body">
+                <h5 class="card-title text-center">E-Faktur Jasa</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Jasa Pembukuan -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s5.svg" class="card-img-top" alt="Jasa Pembukuan">
+              <div class="card-body">
+                <h5 class="card-title text-center">Jasa Pembukuan</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Penutupan PT -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s6.svg" class="card-img-top" alt="Penutupan PT">
+              <div class="card-body">
+                <h5 class="card-title text-center">Penutupan PT</h5>
+              </div>
+            </div>
+          </div>
+          <!-- E-Faktur Jasa -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/s7.svg" class="card-img-top" alt="E-Faktur Jasa">
+              <div class="card-body">
+                <h5 class="card-title text-center">E-Faktur Jasa</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 d-flex justify-content-center align-items-center">
+              <h5 class="next">Selengkapnya</h5>
+              <div class="circle d-flex justify-content-center align-items-center" alt="Next">
+                <img src="images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-logo">
+              <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="footer-info d-flex">
+              <div class="img d-flex justify-content-center align-items-baseline">
+                <img src="images/home.svg" alt="home">
+              </div>
+              <div class="info">
+                <p class="d-inline">Jl. Perintis Kemerdekaan No.59, Kota Makassar</p>
+              </div>
+            </div>
+            <div class="footer-info d-flex">
+              <div class="img d-flex justify-content-center align-items-baseline telephone">
+                <img src="images/telphone.svg" alt="telephone">
+              </div>
+              <div class="info">
+                <p class="d-inline">+6281-2345-6782<br>insaniasinergia@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-title">
+              <h6>Layanan Insania Sinergia</h6>
+            </div>
+            <div class="footer-links">
+              <a href="#">Jasa Pembukuan</a>
+              <a href="#">Jasa Pendampingan</a>
+              <a href="#">Konsultasi Pajak</a>
+              <a href="#">Pembuatan dan Perubahan Akta</a>
+              <a href="#">Kuasa hukum pengadilan pajak</a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-title">
+              <h6>Sumber Data</h6>
+            </div>
+            <div class="footer-links">
+              <a href="#">FAQ</a>
+              <a href="#">Studi Kasus</a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-title">
+              <h6>Company</h6>
+            </div>
+            <div class="footer-links">
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <a href="#">Careers</a>
+              <a href="#">Youtube</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body container-fluid">
+            <div class="d-grid mx-1 my-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="w-100 m-5 imgLogin">
+                  <img src="images/imgLogin.svg" alt="Login Images">
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mx-3">
+                <div class="loginBox">
+                  <div class="text-start mb-4">
+                    <h2>
+                      Sign in
+                    </h2>
+                  </div>
+                  <div class="input">
+                    <label for="email" class="d-block">Email Address</label>
+                    <input type="email" id="email" class="w-100 border-0">
+                  </div>
+                  <div class="input">
+                    <label for="password" class="d-block">Password</label>
+                    <input type="password" id="password" class="w-100 border-0">
+                  </div>
+                  <div class="forgotPassword text-end">
+                    <a href="#" class="text-decoration-none">Lupa password</a>
+                  </div>
+                  <div class="buttonBox">
+                    <button class="w-100 border-0 signin">Sign In</button>
+                    <button class="w-100 border-0 register" data-bs-target="#modalRegister" data-bs-toggle="modal">Create New Account</button>
+                    <button class="w-100 border-0 google"><img src="images/icon-google.svg" alt="Icon Google">Masuk/Daftar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal Login -->
+
+    <!-- Modal Regist -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="modalRegisterLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body container-fluid">
+            <div class="d-grid mx-1 my-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="w-100 m-5 imgLogin">
+                  <img src="images/imgLogin.svg" alt="Login Images">
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center mx-3">
+                <div class="loginBox">
+                  <div class="text-start mb-4">
+                    <h2>
+                      NEW ACCOUNT
+                    </h2>
+                  </div>
+                  <div class="input">
+                    <label for="email" class="d-block">Email Address</label>
+                    <input type="email" id="email" class="w-100 border-0">
+                  </div>
+                  <div class="input">
+                    <label for="password" class="d-block">Password</label>
+                    <input type="password" id="password" class="w-100 border-0">
+                  </div>
+                  <div class="forgotPassword text-end">
+                    <a href="#" class="text-decoration-none">Lupa password</a>
+                  </div>
+                  <div class="buttonBox">
+                    <button class="w-100 border-0 signin">Sign In</button>
+                    <button class="w-100 border-0 register">Create New Account</button>
+                    <button class="w-100 border-0 google"><img src="images/icon-google.svg" alt="Icon Google">Masuk/Daftar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal Regist -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

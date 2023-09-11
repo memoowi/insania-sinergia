@@ -1,0 +1,295 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-button-color: #018491;
+  --main-button-color-hover: #026972;
+  --secondary-button-color: #D9D9D9;
+  --mainBackgroundColor: rgba(2, 84, 100, 0.5);
+  --secondaryTextColor: rgba(0, 0, 0, 0.75);
+  --thirdTextColor: rgba(0, 0, 0, 0.50);
+}
+
+.navbar .container-fluid .collapse ul .nav-item {
+  margin-right: 26px;
+}
+.navbar .container-fluid .collapse ul .nav-item .nav-link {
+  color: var(--secondaryTextColor);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.navbar .container-fluid .collapse .d-flex .btn-primary {
+  width: 170px;
+  height: 40px;
+  border-radius: 15px;
+  background: var(--main-button-color);
+  border-color: var(--main-button-color);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.navbar .container-fluid .collapse .d-flex :hover {
+  background: var(--main-button-color-hover);
+}
+
+.head {
+  font-family: "Poppins", sans-serif;
+  padding: 20px 20px 80px 20px;
+  background: var(--mainBackgroundColor);
+}
+.head .row .kiri .content h1 {
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+  line-height: 67.5px;
+  margin-bottom: 41px;
+  margin-top: 14px;
+}
+.head .row .kiri .content p {
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+  margin-bottom: 55px;
+}
+.head .row .kiri .content .button .btn-secondary {
+  border: 1px solid var(--main-button-color);
+  border-radius: 15px;
+  background: white;
+  color: var(--main-button-color);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 15px;
+}
+.head .row .kanan .img-fluid {
+  width: 500px;
+  height: 500px;
+}
+
+.aboutUs {
+  height: fit-content;
+}
+.aboutUs .row .kiri {
+  height: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .aboutUs .row .kiri .gambar-1 {
+    width: 70%;
+  }
+  .aboutUs .row .kiri .gambar-2 .img-2 {
+    width: 50%;
+    left: 5%;
+  }
+}
+.aboutUs .row .kiri .gambar-2 .img-2 {
+  bottom: 100px;
+  right: 20%;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .aboutUs .row .kanan .text-end h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .aboutUs .row .kanan .text-end p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .aboutUs .row .kanan .text-end div {
+    text-align: center;
+  }
+}
+.aboutUs .row .kanan .text-end h2 {
+  font-weight: 600;
+  font-size: 35px;
+}
+.aboutUs .row .kanan .text-end p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.aboutUs .row .kanan .text-end div .btn-primary {
+  border-radius: 15px;
+  background: var(--main-button-color);
+  border-color: var(--main-button-color);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.whyUs .container {
+  margin-top: 62px;
+  margin-bottom: 70px;
+}
+.whyUs .container .text-center h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.whyUs .container .d-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.whyUs .container .d-grid .text-center {
+  border: 1px solid var(--main-button-color);
+  border-radius: 10px;
+}
+.whyUs .container .d-grid .text-center div {
+  width: 76px;
+  height: 54px;
+  background: #65BABF;
+  margin: 23px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyUs .container .d-grid .text-center h3 {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 20px 15px 20px;
+}
+.whyUs .container .d-grid .text-center p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 25px;
+  padding-bottom: 1rem;
+}
+
+.services {
+  margin: 72px auto;
+}
+.services .container .title {
+  margin-bottom: 37px;
+}
+.services .container .title h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.services .container .row .col .card {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.services .container .row .col .card .card-img-top {
+  padding: 2px 28px 14px 28px !important;
+}
+.services .container .row .col .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.services .container .row .col .card .next {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.services .container .row .col .card .circle {
+  background: #65BABF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.services .container .row .col .card:hover {
+  border: 1px solid var(--main-button-color);
+  background-color: rgba(100, 186, 190, 0.5);
+  cursor: pointer;
+}
+.services .container .row .col .card:hover .card-img-top {
+  z-index: -1;
+}
+
+footer {
+  background: rgba(2, 84, 100, 0.5);
+  padding-top: 37px;
+  padding-bottom: 86px;
+}
+footer .container .row {
+  color: white;
+}
+footer .container .row .col-lg-4 .footer-logo {
+  margin-bottom: 16px;
+}
+footer .container .row .col-lg-4 .footer-info .img img {
+  margin-right: 12px;
+}
+footer .container .row .col-lg-4 .footer-info .telephone {
+  padding-left: 2px;
+}
+footer .container .row .col-lg-4 .footer-info .info {
+  margin-bottom: 6px;
+}
+footer .container .row .col-lg-4 .footer-info .info p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+footer .container .row .col-lg-4 .footer-title, footer .container .row .col-lg-2 .footer-title {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+footer .container .row .col-lg-4 .footer-title h6, footer .container .row .col-lg-2 .footer-title h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+footer .container .row .col-lg-4 .footer-links a, footer .container .row .col-lg-2 .footer-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-content {
+  border-radius: 45px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .imgLogin {
+  background: var(--secondary-button-color);
+  padding: 45px 40px;
+  border-radius: 30px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .text-start h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--thirdTextColor);
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .input label {
+  margin-bottom: 7px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .input input {
+  background: var(--secondary-button-color);
+  border-radius: 20px;
+  height: 35px;
+  padding: 0 16px;
+  margin-bottom: 9px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .forgotPassword {
+  margin-top: -6px;
+  margin-bottom: 23px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .forgotPassword a {
+  color: var(--thirdTextColor);
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .buttonBox button {
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 0;
+  border-radius: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .buttonBox .signin {
+  background: rgba(1, 132, 145, 0.75);
+  color: white;
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .buttonBox .register {
+  background: var(--secondary-button-color);
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .buttonBox .google {
+  background: var(--secondary-button-color);
+}
+.modal .modal-dialog .modal-content .modal-body .d-grid .d-flex .loginBox .buttonBox .google img {
+  margin-right: 8px;
+}/*# sourceMappingURL=main.css.map */

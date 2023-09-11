@@ -1,0 +1,381 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-button-color: #018491;
+    --main-button-color-hover: #026972;
+    --secondary-button-color: #D9D9D9;
+    --mainBackgroundColor: rgba(2, 84, 100, 0.5);
+    --secondaryTextColor: rgba(0, 0, 0, 0.75);
+    --thirdTextColor: rgba(0, 0, 0, 0.50);
+}
+
+// Navbar
+.navbar {
+    .container-fluid {
+        .collapse {
+            ul {
+                .nav-item {
+                    margin-right: 26px;
+                    .nav-link {
+                        color: var(--secondaryTextColor);
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-family: 'Inter', sans-serif;
+                    }
+                }
+            }
+        .d-flex {
+            .btn-primary {
+                width: 170px;  
+                height: 40px;
+                border-radius: 15px;
+                background: var(--main-button-color);
+                border-color: var(--main-button-color);
+                font-weight: 600;
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;
+            }:hover {
+                background: var(--main-button-color-hover);
+            }
+        }
+        }
+    }
+}
+//End of Navbar
+
+// Header
+.head {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 20px 80px 20px;
+    background: var(--mainBackgroundColor);
+    .row {
+        .kiri {
+            .content {
+                h1 {
+                    font-weight: 700;
+                    font-size: 45px;
+                    color: white;
+                    line-height: 67.5px;
+                    margin-bottom: 41px;
+                    margin-top: 14px;
+                }
+                p {
+                    font-size: 20px;
+                    color: white;
+                    line-height: 30px;
+                    margin-bottom: 55px;
+
+                }
+                .button {
+                    .btn-secondary {
+                        border: 1px solid var(--main-button-color);
+                        border-radius: 15px;
+                        background: white;
+                        color: var(--main-button-color);
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 12px 15px;
+                    }
+                }
+            }
+        }
+        .kanan {
+            .img-fluid {
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+}
+// End of Header
+
+// About Us
+.aboutUs {
+    height: fit-content;
+    .row {
+        .kiri {
+            @media screen and ( max-width: 768px) {
+                .gambar-1 {
+                    width: 70%;
+                }
+                .gambar-2 {
+                    .img-2 {
+                        width: 50%;
+                        left: 5%;
+                    }
+                }
+            }
+            height: fit-content;
+            .gambar-2 {
+                .img-2 {
+                    bottom: 100px;
+                    // left: 400px;
+                    right: 20%;
+                    border: 10px solid white;
+                    border-radius: 10px;
+                } 
+            }
+        }
+        .kanan {
+            .text-end {
+                @media screen and ( max-width: 768px) {
+                    h2 {
+                        text-align: center;
+                        padding-bottom: 20px;
+                    }
+                    p{
+                        text-align: center;
+                        padding-bottom: 20px;
+                    }
+                    div {
+                        text-align: center;
+                    }
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                div {
+                    .btn-primary {
+                        border-radius: 15px;
+                        background: var(--main-button-color);
+                        border-color: var(--main-button-color);
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 8px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of About Us
+
+// Why us
+.whyUs {
+    .container {
+        margin-top: 62px;
+        margin-bottom: 70px;
+        .text-center {
+            h2 {
+                font-weight: 700;
+                font-size: 35px;
+            }
+        }
+        .d-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            .text-center {
+                border: 1px solid var(--main-button-color);
+                border-radius: 10px;
+                div {
+                    width: 76px;
+                    height: 54px;
+                    background: #65BABF;
+                    margin: 23px auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    padding: 0 20px 15px 20px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin: 0 25px;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+// End of Why Us
+
+// Services
+.services {
+    margin: 72px auto;
+    .container {
+        .title {
+            margin-bottom: 37px;
+            h2 {
+                font-weight: 700;
+                font-size: 35px;
+            }
+        }
+        .row {
+            .col {
+                .card {
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    .card-img-top {
+                        padding: 2px 28px 14px 28px !important;
+                    }
+                    .card-body {
+                        .card-title {
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+                    }
+                    .next {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    .circle {
+                        background: #65BABF;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .card:hover {
+                    border: 1px solid var(--main-button-color);
+                    background-color: rgba(100, 186, 190, 0.5);
+                    cursor: pointer;
+                    .card-img-top {
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Services
+
+// Footer
+footer {
+    background: rgba(2, 84, 100, 0.5);
+    padding-top: 37px;
+    padding-bottom: 86px;
+    .container {
+        .row {
+            color: white;
+            .col-lg-4 {
+                .footer-logo {
+                    margin-bottom: 16px;
+                }
+                .footer-info {
+                    .img {
+                        img {
+                            margin-right: 12px;
+                        }
+                    }
+                    .telephone {
+                        padding-left: 2px;
+                    }
+                    .info {
+                        margin-bottom: 6px;
+                        p {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+            .col-lg-4, .col-lg-2 {
+                .footer-title {
+                    margin-top: 24px;
+                    margin-bottom: 40px;
+                    h6 {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+                .footer-links {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 27px;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Footer
+
+// Modal Login
+.modal {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 45px;
+            .modal-body {
+                .d-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    .d-flex {
+                        .imgLogin {
+                            background: var(--secondary-button-color);
+                            padding: 45px 40px;
+                            border-radius: 30px;
+                        }
+                        .loginBox {
+                            .text-start {
+                                h2 {
+                                    font-weight: 700;
+                                    font-size: 30px;
+                                    color: var(--thirdTextColor);
+                                }
+                            }
+                            .input {
+                                label {
+                                    margin-bottom: 7px;
+                                }
+                                input {
+                                    background: var(--secondary-button-color);
+                                    border-radius: 20px;
+                                    height: 35px;
+                                    padding: 0 16px;
+                                    margin-bottom: 9px;
+                                }
+                            }
+                            .forgotPassword {
+                                margin-top: -6px;
+                                margin-bottom: 23px;
+                                a {
+                                    color: var(--thirdTextColor);
+                                }
+                            }
+                            .buttonBox {
+                                button {
+                                    margin-bottom: 18px;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    padding: 6px 0;
+                                    border-radius: 20px;
+                                }
+                                .signin {
+                                    background: rgba(1, 132, 145, 0.75);
+                                    color: white;
+                                }
+                                .register {
+                                    background: var(--secondary-button-color);
+                                }
+                                .google {
+                                    img {
+                                        margin-right: 8px;
+                                    }
+                                    background: var(--secondary-button-color);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
